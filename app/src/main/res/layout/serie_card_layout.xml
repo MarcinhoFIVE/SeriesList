@@ -13,6 +13,7 @@
         android:orientation="vertical">
 
         <ImageView
+            android:src="@drawable/supernatural"
             android:scaleType="fitXY"
             android:id="@+id/ivSerie"
             android:layout_width="150dp"
