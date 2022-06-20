@@ -3,6 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/cvSerie"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_gravity="center_horizontal">
@@ -29,7 +31,6 @@
             android:text="Name of the Serie"
             android:textStyle="bold"
             android:gravity="center_horizontal" />
-
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>

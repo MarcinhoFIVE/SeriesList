@@ -6,15 +6,17 @@ public class Serie {
     private String categorySerie;
     private String descriptionSerie;
     private int fotoSerie;
+    private int fotoSeriePos;
 
     public Serie() {
     }
 
-    public Serie(String nameSerie, String categorySerie, String descriptionSerie, int fotoSerie) {
+    public Serie(String nameSerie, String categorySerie, String descriptionSerie, int fotoSerie, int fotoSeriePos) {
         this.nameSerie = nameSerie;
         this.categorySerie = categorySerie;
         this.descriptionSerie = descriptionSerie;
         this.fotoSerie = fotoSerie;
+        this.fotoSeriePos = fotoSeriePos;
     }
 
     public String getNameSerie() {
@@ -47,5 +49,13 @@ public class Serie {
 
     public void setFotoSerie(int fotoSerie) {
         this.fotoSerie = fotoSerie;
+    }
+
+    public int getFotoSeriePos() {
+        return fotoSeriePos;
+    }
+
+    public void setFotoSeriePos(int fotoSeriePos) {
+        this.fotoSeriePos = fotoSeriePos;
     }
 }

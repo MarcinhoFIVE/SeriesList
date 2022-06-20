@@ -25,10 +25,10 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.hasFixedSize();
 
         listSerie = new ArrayList<>();
-        listSerie.add(new Serie("Supernatural", "Horror", "Hunter Serie", R.drawable.supernatural));
-        listSerie.add(new Serie("Gossip Girl", "Drama", "Drama Serie", R.drawable.gossip));
-        listSerie.add(new Serie("Wife and Kids ", "Comedy", "Comedy Serie", R.drawable.wifekids));
-
+        listSerie.add(new Serie("Supernatural", "Horror", "Hunter Serie", R.drawable.supernatural, R.drawable.supernaturalpost));
+        listSerie.add(new Serie("Gossip Girl", "Drama", "Drama Serie", R.drawable.gossip, R.drawable.gossippost));
+        listSerie.add(new Serie("Wife and Kids", "Comedy", "Comedy Serie", R.drawable.wifekids, R.drawable.wifekidspost));
+        listSerie.add(new Serie("Big Bang Theory", "Comedy", "Comedy Serie", R.drawable.bigbang, R.drawable.bigbangpost));
 //        SerieList listSerie = (SerieList) new SerieList().getListSerie();
 //        SerieAdapter adapter = new SerieAdapter(getApplicationContext(), listSerie.listSerie);
 
