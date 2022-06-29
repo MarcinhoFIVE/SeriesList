@@ -47,7 +47,8 @@ public class SerieAdapter extends RecyclerView.Adapter<SerieAdapter.ViewHolder> 
             public void onClick(View v) {
                 Intent intent = new Intent(context, SerieDetail.class);
 
-                intent.putExtra("foto_serie", serie.get(holder.getAdapterPosition()).getFotoSeriePos());
+                intent.putExtra("foto_bar", serie.get(holder.getAdapterPosition()).getFotoSeriePos());
+                intent.putExtra("foto_serie", serie.get(holder.getAdapterPosition()).getFotoSerie());
                 intent.putExtra("nome_serie", serie.get(holder.getAdapterPosition()).getNameSerie());
                 intent.putExtra("categoria_serie", serie.get(holder.getAdapterPosition()).getCategorySerie());
                 intent.putExtra("descricao_serie", serie.get(holder.getAdapterPosition()).getDescriptionSerie());

@@ -33,10 +33,11 @@ public class SerieDetail extends AppCompatActivity {
 
         Intent intent = getIntent();
 
-        int foto;
+        int foto, bar;
         String nome, categoria, descricao;
 
         foto = intent.getIntExtra("foto_serie", 0);
+        bar = intent.getIntExtra("foto_bar", 0);
         nome = intent.getStringExtra("nome_serie");
         categoria = intent.getStringExtra("categoria_serie");
         descricao = intent.getStringExtra("descricao_serie");
@@ -46,7 +47,7 @@ public class SerieDetail extends AppCompatActivity {
         recebeCategoria.setText(categoria);
         recebeDescricao.setText(descricao);
 
-        toolBar.setImageResource(foto);
+        toolBar.setImageResource(bar);
 
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
