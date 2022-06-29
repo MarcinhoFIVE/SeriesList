@@ -18,6 +18,8 @@ public class SerieDetail extends AppCompatActivity {
     TextView recebeCategoria;
     TextView recebeDescricao;
 
+    ImageView toolBar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +29,7 @@ public class SerieDetail extends AppCompatActivity {
         recebeNome = findViewById(R.id.tvRecebeNome);
         recebeCategoria = findViewById(R.id.tvCategory);
         recebeDescricao = findViewById(R.id.tvDescription);
+        toolBar = findViewById(R.id.collapseToolbar);
 
         Intent intent = getIntent();
 
@@ -42,6 +45,8 @@ public class SerieDetail extends AppCompatActivity {
         recebeNome.setText(nome);
         recebeCategoria.setText(categoria);
         recebeDescricao.setText(descricao);
+
+        toolBar.setImageResource(foto);
 
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
